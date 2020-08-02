@@ -76,7 +76,9 @@ assignText();
    */
 
 const changeTitle = () => {
-    let inputValue = document.querySelector("#text").value;
-    document.querySelector("h1").innerText = inputValue;
+    let input = document.querySelector("#text");
+    document.querySelector("h1").innerText = input.value;
+
+    input.value = "";
 
 }
